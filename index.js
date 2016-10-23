@@ -159,7 +159,8 @@ function poopCollisionHandler() {
 
   stateText.visible = true;
 
-  food.destroy()
+  food.destroy();
+  ga('send', 'event', "Game", "HightScore", "GameOver", score);
 }
 
 function snakeOut(snake) {
